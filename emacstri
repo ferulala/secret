@@ -7,7 +7,8 @@ unbind <C-u>
 unbind <C-x>
 unbind <C-g>
 unbind <C-Space>
-
+unbind n
+unbind p
 " Ctrl-g is your friend (and hardcoded <C-,> of course)
 bind --mode=browser <C-g> escapehatch
 
@@ -64,10 +65,10 @@ bind <C-u><C-x>rj fillcmdline bmarks -t
 bind <C-x>rm current_url bmark
 
 " Tabs
-bind <n> tabnext
-bind <p> tabprev
-bind <N> tabmove +1
-bind <P> tabmove -1
+bind n tabnext
+bind p tabprev
+bind N tabmove +1
+bind P tabmove -1
 bind <C-x>b fillcmdline buffer
 bind <C-x>k tabclose
 bind <C-x>0 tabclose
