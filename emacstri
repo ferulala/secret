@@ -149,4 +149,4 @@ bind --mode=ex <C-f> text.forward_char
 bind --mode=ex <C-b> text.backward_char
 
 " Functions
-command emacs-bindings-update source --url https://raw.githubusercontent.com/jumper047/tridactyl_emacs_config/main/emacs_bindings
+command emacs-bindings-update source --url https://raw.githubusercontent.com/ferulala/secret/refs/heads/main/emacstri?token=GHSAT0AAAAAADIFXPQCD77OFWWB2GDXN53I2EHUTCQ
