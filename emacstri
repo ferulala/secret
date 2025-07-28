@@ -37,7 +37,7 @@ bind --mode=ex <C-s> findnext 1
 bind --mode=ex <C-r> findnext --reverse
 
 " Hinting
-bind spacebar hint
+bind f hint
 bind <C-u>f hint -b
 bind c hint -y
 bind yy clipboard yank
