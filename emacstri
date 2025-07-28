@@ -7,8 +7,7 @@ unbind <C-u>
 unbind <C-x>
 unbind <C-g>
 unbind <C-Space>
-unbind n
-unbind p
+
 " Ctrl-g is your friend (and hardcoded <C-,> of course)
 bind --mode=browser <C-g> escapehatch
 
@@ -21,8 +20,6 @@ bind <A-<> scrollto 0
 bind <C-n> scrollline 10
 bind <C-p> scrollline -10
 bind <C-u><C-Space> jumpprev
-#bind n followpage next
-#bind p followpage prev
 " bindings below remains same for
 " backward compatibility reasons.
 " should be removed some day
@@ -40,10 +37,10 @@ bind --mode=ex <C-s> findnext 1
 bind --mode=ex <C-r> findnext --reverse
 
 " Hinting
-bind f hint
+bind spacebar hint
 bind <C-u>f hint -b
 bind c hint -y
-bind w clipboard yank
+bind yy clipboard yank
 bind --mode=hint <C-g> hint.reset
 bind --mode=hint <C-n> hint.focusBottomHint
 bind --mode=hint <C-p> hint.focusTopHint
@@ -72,7 +69,7 @@ bind P tabmove -1
 bind <C-x>b fillcmdline buffer
 bind <C-x>k tabclose
 bind <C-x>0 tabclose
-bind q tabclose
+bind k tabclose
 bind <C-x>1 tabonly
 bind <C-x>tp pin
 bind <C-x>tm mute toggle
@@ -81,7 +78,7 @@ bind <C-x>u undo
 bind <C-/> undo
 
 " Pages
-bind R reload
+bind g reload
 bind + zoom 0.1 true
 bind - zoom -0.1 true
 bind = zoom 1
@@ -92,9 +89,9 @@ bind <C-x>52 winopen
 bind <C-u><C-x>52 winopen -private
 
 " Open links
-bind g fillcmdline open
+bind <C-x><C-v> fillcmdline open
 bind <C-u>0g current_url open
-bind <C-u>g fillcmdline tabopen
+bind <C-x><C-f> fillcmdline tabopen
 
 " Textfields
 bind --mode=insert <C-d> text.delete_char
