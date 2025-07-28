@@ -7,6 +7,8 @@ unbind <C-u>
 unbind <C-x>
 unbind <C-g>
 unbind <C-Space>
+unbind n
+unbind p
 
 " Ctrl-g is your friend (and hardcoded <C-,> of course)
 bind --mode=browser <C-g> escapehatch
